@@ -1,4 +1,4 @@
-#Step 0: #Step 0: Predict a sentiment score. I predict 0.5, because the text seems to have a strong negative beginning, but the second paragraph includes almost entirely positive words and phrases.
+#Step 0: Predict a sentiment score. I predict 0.5, because the text seems to have a strong negative beginning, but the second paragraph includes almost entirely positive words and phrases.
 
 #Step 1: import TextBlob
 
