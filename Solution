@@ -1,3 +1,7 @@
+#Step 0: #Step 0: Predict a sentiment score. I predict 0.5, because the text seems to have a strong negative beginning, but the second paragraph includes almost entirely positive words and phrases.
+
+#Step 1: import TextBlob
+
 from textblob import TextBlob
 # import pandas as pd
 # import csv - didn't use(see below)
@@ -21,9 +25,11 @@ edu=TextBlob(passage2) #putting the new passage through the TextBlob module
 x=edu.sentiment.polarity #x is the sentiment score
 
 #Step 4: print the passage's sentiment score
+
 print("Overall sentiment value: " + str(x), end = " ")
 
 #Step 5: print the passage's general sentiment
+
 if x < 0:
   print("> negative")
 elif x==0:
@@ -32,6 +38,7 @@ else:
   print("> positive")
 
 #Step 6: print line-by-line sentiment scores to better understand how the program is reacting to words
+
 #import nltk
 #nltk.download('punkt')
 
@@ -58,6 +65,8 @@ for sentence in text.sentences:
   else:
     print("> positive")
   print("\n\n\n")
+
+#Final Remarks
 
 print("************FINAL REMARKS************")
 print("\n")
